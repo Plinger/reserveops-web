@@ -26,4 +26,4 @@ Open http://localhost:3100. Start the separate API on port 4000 for a live conne
 
 The home page now accepts a public Stellar testnet sponsor address and displays the API's live read-only inventory. Select **Inspect testnet example** to view the project's public five-unit fixture. MongoDB is not required for this preview.
 
-To contribute, read [CONTRIBUTING.md](CONTRIBUTING.md). The [API backlog](https://github.com/Plinger/reserveops-api/blob/main/docs/contributor-backlog.md) also includes proposed dashboard work.
+To contribute, read [CONTRIBUTING.md](CONTRIBUTING.md) and the [open dashboard issues](https://github.com/Plinger/reserveops-web/issues). The [API backlog](https://github.com/Plinger/reserveops-api/blob/main/docs/contributor-backlog.md) also includes longer-term dashboard work.
