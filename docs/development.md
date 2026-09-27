@@ -13,7 +13,7 @@ NEXT_PUBLIC_API_URL defaults to http://localhost:4000. This value is public and 
 - npm run check: lint, typecheck, production build.
 - npm run format / npm run format:check: Prettier.
 
-Builds work without a running API. The page checks API liveness in the browser with a timeout and retry support. Liveness does not imply database readiness; inspect /ready separately.
+Builds work without a running API. The page checks API liveness in the browser with a timeout and retry support. Liveness does not imply database connectivity; inspect the `database` field in `/ready` separately.
 
 The home page also has a testnet sponsor form. Its **Inspect testnet example** action uses a public fixture address and requests the backend's `/v1/testnet/sponsors/{sponsorId}/inventory` endpoint. The browser validates address shape; the backend validates the Stellar checksum. The response is parsed with Zod before rendering. The page shows when the ledger moved or the report covers only part of a sponsor's commitments.
 

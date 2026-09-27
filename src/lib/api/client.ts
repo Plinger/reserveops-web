@@ -3,7 +3,7 @@ import { config } from "@/lib/config/env";
 const healthSchema = z.object({
   status: z.literal("ok"),
   service: z.literal("reserveops-api"),
-  network: z.enum(["testnet", "mainnet"]),
+  network: z.literal("testnet"),
 });
 export async function getHealth(signal?: AbortSignal) {
   const response = await fetch(config.apiUrl.replace(/\/$/, "") + "/health", {
